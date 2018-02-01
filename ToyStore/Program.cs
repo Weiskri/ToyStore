@@ -26,6 +26,38 @@ namespace ToyStore
             //    Console.WriteLine(toyList[i]);
             //}
 
+            // The properties and methods we will use the most are 
+            // .Count
+            // .Insert()
+            // .Add()
+            // .Remove()
+
+            Console.WriteLine(toyList.Count);
+            toyList.Remove("Barbie");
+            Console.WriteLine(toyList.Count);
+
+            // Insert allows us to put a new element in the list and specify which index we want for that element
+            toyList.Insert(0, "kite");
+            toyList.Insert(2, "baby doll");
+            toyList.Insert(1, "plastic dinosaur");
+
+            foreach (string toy in toyList)
+            {
+                Console.WriteLine(toy);
+            }
+
+            // Another method that we will often use is .Contains()
+            // It returns a boolean value
+
+            if (toyList.Contains("plastic dinosaur"))
+            {
+                Console.WriteLine("Daniel would never the buy the dino.");
+            }
+            else
+            {
+                Console.WriteLine("Daniel might buy any of these toys.");
+            }
+
        
             
             List<string> employeeNames = new List<string>(); // list size can change so no need to assign it a size.
